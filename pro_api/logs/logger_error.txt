@@ -1,0 +1,8 @@
+2019-04-12 17:34:39,287-ERROR-logger.py-33-你是error信息
+2019-06-14 10:09:01,201-ERROR-web_Confidence_In_the_flow.py-26-请求时出错:'str' object has no attribute 'items'
+2019-06-14 10:09:01,213-ERROR-web_Confidence_In_the_flow.py-26-请求时出错:'str' object has no attribute 'items'
+2019-06-14 14:12:13,397-ERROR-Details_of_The_Circle.py-29-请求时出错:'str' object has no attribute 'items'
+2019-08-01 16:37:10,153-ERROR-logger.py-33-你是error信息
+2019-08-01 16:37:28,699-ERROR-logger.py-33-你是error信息
+2019-08-01 16:38:59,302-ERROR-logger.py-33-你是error信息
+2019-08-01 16:39:31,397-ERROR-logger.py-33-你是error信息
