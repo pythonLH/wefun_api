@@ -1,0 +1,7 @@
+
+[2019-12-24 15:45:20,770] - My_Logger.py] - ERROR: 请求接口错误: local variable 'data' referenced before assignment
+[2019-12-24 15:45:20,777] - My_Logger.py] - ERROR: 请求接口错误: local variable 'data' referenced before assignment
+[2019-12-24 15:45:20,779] - My_Logger.py] - ERROR: 请求接口错误: local variable 'data' referenced before assignment
+[2019-12-24 15:45:20,781] - My_Logger.py] - ERROR: 请求接口错误: local variable 'data' referenced before assignment
+[2019-12-24 15:45:20,784] - My_Logger.py] - ERROR: 请求接口错误: local variable 'data' referenced before assignment
+[2019-12-24 15:45:20,786] - My_Logger.py] - ERROR: 请求接口错误: local variable 'data' referenced before assignment
