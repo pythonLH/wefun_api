@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="854b53a2-de2e-4c6a-bc1d-fd82c2d20325" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fzaE3trxAGqC6dbp0QjOmIb2DY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WeFun Smoke\case" />
+      <recent name="D:\WeFun Smoke\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WeFun Smoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_002_new_community.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="WeFun Smoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/test_002_new_community.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_005_news_channel.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="WeFun Smoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/test_005_news_channel.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_006_new_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="WeFun Smoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/test_006_new_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_007_Set_the_data.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="WeFun Smoke" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/test_007_Set_the_data.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Unittests in test_005_news_channel.py" />
+        <item itemvalue="Python tests.Unittests in test_002_new_community.py" />
+        <item itemvalue="Python tests.Unittests in test_007_Set_the_data.py" />
+        <item itemvalue="Python tests.Unittests in test_006_new_group.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="854b53a2-de2e-4c6a-bc1d-fd82c2d20325" name="Default Changelist" comment="" />
+      <created>1597223259780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597223259780</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="707" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597892202999">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597892202999" />
+    <state x="590" y="263" key="#com.intellij.ide.util.ExportDialog" timestamp="1597892260034">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="590" y="263" key="#com.intellij.ide.util.ExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597892260034" />
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598519883576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598519883576" />
+    <state width="1899" height="240" key="GridCell.Tab.0.bottom" timestamp="1602308820095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602308820095" />
+    <state width="1899" height="240" key="GridCell.Tab.0.center" timestamp="1602308820095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602308820095" />
+    <state width="1899" height="240" key="GridCell.Tab.0.left" timestamp="1602308820095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602308820095" />
+    <state width="1899" height="240" key="GridCell.Tab.0.right" timestamp="1602308820095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602308820095" />
+    <state width="1899" height="361" key="GridCell.Tab.1.bottom" timestamp="1599789989691">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599789989691" />
+    <state width="1899" height="361" key="GridCell.Tab.1.center" timestamp="1599789989691">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="361" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599789989691" />
+    <state width="1899" height="361" key="GridCell.Tab.1.left" timestamp="1599789989691">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="361" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599789989691" />
+    <state width="1899" height="361" key="GridCell.Tab.1.right" timestamp="1599789989691">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="361" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599789989691" />
+    <state x="540" y="257" key="IDE.errors.dialog" timestamp="1598417256309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="257" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598417256309" />
+    <state x="748" y="155" key="SettingsEditor" timestamp="1597223333547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597223333547" />
+    <state x="708" y="338" key="com.intellij.ide.util.TipDialog" timestamp="1599790095143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="708" y="338" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599790095143" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598510851925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598510851925" />
+  </component>
+</project>

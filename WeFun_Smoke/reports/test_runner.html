@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>wefun接口测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">wefun接口测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 测试组</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-10-10 13:47:00</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:10.514367</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 18，通过 16，错误 2，通过率= 88.89%</p>
+
+<p class='description'></p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 88.89% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 16 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 18 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_002_new_community.new</td>
+    <td class="text-center">3</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',3)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: 创建社区--&gt;成功 {'code': 0, 'server_name': '测试', 'server_icon': '', 'tag': '', 'server_id': '1293932806858080256'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_002</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <div id='div_ft1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <div id='div_ft1_2' class="collapse in" align="left">
+    <pre>
+    
+ft1_2: 创建社区中的分类--&gt;失败 {'name': 'Forbidden', 'message': '您没有执行此操作的权限。', 'code': 403, 'status': 403, 'type': 'yii\\web\\ForbiddenHttpException'}
+[2020-10-10 13:47:02,687] - Logger.py] - INFO: 创建社区中的分类--&gt;失败 {'name': 'Forbidden', 'message': '您没有执行此操作的权限。', 'code': 403, 'status': 403, 'type': 'yii\\web\\ForbiddenHttpException'}
+Traceback (most recent call last):
+  File "D:\WeFun Smoke\case\test_002_new_community.py", line 66, in test_002
+    self.assertEqual(case['expected'],result['code'])
+  File "C:\python3.6\lib\unittest\case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\python3.6\lib\unittest\case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '0' != 403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\WeFun Smoke\case\test_002_new_community.py", line 68, in test_002
+    My_Logger().error("错误接口: %s%s"%case['title']%e)
+TypeError: not enough arguments for format string
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_003</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in" align="left">
+    <pre>
+    
+pt1_3: 删除社区--&gt;成功 {'code': 0, 'message': 'success'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_003_join_communit.join</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',3)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_serch_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in" align="left">
+    <pre>
+    
+pt2_1: 社区搜索 {'code': 0, 'count': 1, 'data': [{'_id': '1216333003035246592', 'vip_id': '1185606546449498112', 'server_name': '乐园社区', 'server_alias': '', 'server_icon': '5d3edd8f4c993952f064eddbe0b373e7.jpg', 'server_desc': '', 'setting': '{"base":{"channel_id":"7216333003039440896","message":{"welcom_message":"1","become_admin":"0","user_cnt":"1","user_forbidden":"1","add_robert":"0","cus_server_channel":"0"},"notice":"0"},"private_security":{"private":{"is_follow_pws":"0","is_search_verify":"0","is_link_verify":"0"},"security_level":"2"}}', 'banner': '', 'game': '', 'is_search': '1', 'tag': '', 'is_auth': '0', 'joined_num': '1624', 'online_num': '16', 'create_datetime': '2020-03-10 10:33:06', 'short_id': '600045'}], 'pageSize': 12, 'page': 1}
+社区搜索--&gt;成功 {'code': 0, 'count': 1, 'data': [{'_id': '1216333003035246592', 'vip_id': '1185606546449498112', 'server_name': '乐园社区', 'server_alias': '', 'server_icon': '5d3edd8f4c993952f064eddbe0b373e7.jpg', 'server_desc': '', 'setting': '{"base":{"channel_id":"7216333003039440896","message":{"welcom_message":"1","become_admin":"0","user_cnt":"1","user_forbidden":"1","add_robert":"0","cus_server_channel":"0"},"notice":"0"},"private_security":{"private":{"is_follow_pws":"0","is_search_verify":"0","is_link_verify":"0"},"security_level":"2"}}', 'banner': '', 'game': '', 'is_search': '1', 'tag': '', 'is_auth': '0', 'joined_num': '1624', 'online_num': '16', 'create_datetime': '2020-03-10 10:33:06', 'short_id': '600045'}], 'pageSize': 12, 'page': 1}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_serch_2</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in" align="left">
+    <pre>
+    
+pt2_2: 社区加入 {'code': 0, 'message': 'success'}
+社区加入--&gt;成功 {'code': 0, 'message': 'success'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_serch_3</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in" align="left">
+    <pre>
+    
+pt2_3: 离开社区 {'code': 0, 'message': 'success'}
+离开社区--&gt;成功 {'code': 0, 'message': 'success'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_004_new_code.new_code</td>
+    <td class="text-center">2</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',2)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in" align="left">
+    <pre>
+    
+pt3_1: 生成社区邀请码--&gt;成功 {'code': 0, 'invite_code': '9M6CRJ', 'expire_time': '2020-10-17 13:47:04', 'limit_count': 0, 'invite_link': 'https://test-ma.wefunapp.cn/9M6CRJ', 'is_bind': False}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_002_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse in" align="left">
+    <pre>
+    
+pt3_2: 根据邀请码加入社区--&gt;成功 {'code': 0, 'server_id': '1249029898480123904', 'channel_id': None}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_005_news_channel.send_message</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',3)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse in" align="left">
+    <pre>
+    
+pt4_1: 发送文本内容消息--&gt;成功 {'code': 0, 'type': 0, 'channel_id': '1293932824465768448', 'content': '测试频道消息正常发布', 'attachments': None, '_id': '1293932825996689408', 'author': {'avatar': 'http://img2.woyaogexing.com/2020/08/09/d13d5fbbc2834801bd307149235a15f3!400x400.jpeg', '_id': '1237807399767638016', 'nickname': 'yexin_温情46', 'server_nick': ''}, 'notice_everyone': False, 'create_datetime': '2020-10-10 13:47:05', 'channel_type': 1, 'marked': False, 'channel_name': 'HUST_冰心04', 'server_name': '接口社区', 'nonce': None}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001_2</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
+    <div id='div_pt4_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
+    <div id='div_pt4_2' class="collapse in" align="left">
+    <pre>
+    
+pt4_2: 发送表情内容消息--&gt;成功 {'code': 0, 'type': 0, 'channel_id': '1293932824465768448', 'content': '[斜眼笑]', 'attachments': None, '_id': '1293932829754785792', 'author': {'avatar': 'http://img2.woyaogexing.com/2020/08/09/d13d5fbbc2834801bd307149235a15f3!400x400.jpeg', '_id': '1237807399767638016', 'nickname': 'yexin_温情46', 'server_nick': ''}, 'notice_everyone': False, 'create_datetime': '2020-10-10 13:47:06', 'channel_type': 1, 'marked': False, 'channel_name': 'HUST_冰心04', 'server_name': '接口社区', 'nonce': None}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001_3</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse in" align="left">
+    <pre>
+    
+pt4_3: 发送图片内容消息--&gt;成功 {'code': 0, 'type': 0, 'channel_id': '1293932824465768448', 'content': 'http://g.hiphotos.baidu.com/zhidao/pic/item/c83d70cf3bc79f3d6e7bf85db8a1cd11738b29c0.jpg', 'attachments': None, '_id': '1293932833949089792', 'author': {'avatar': 'http://img2.woyaogexing.com/2020/08/09/d13d5fbbc2834801bd307149235a15f3!400x400.jpeg', '_id': '1237807399767638016', 'nickname': 'yexin_温情46', 'server_nick': ''}, 'notice_everyone': False, 'create_datetime': '2020-10-10 13:47:07', 'channel_type': 1, 'marked': False, 'channel_name': 'HUST_冰心04', 'server_name': '接口社区', 'nonce': None}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_006_new_group.hh</td>
+    <td class="text-center">4</td>
+    <td class="text-center">4</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',4)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
+    <div id='div_pt5_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
+    <div id='div_pt5_1' class="collapse in" align="left">
+    <pre>
+    
+pt5_1: -------------------------------------------------开始-------------------------------------------------
+[2020-10-10 13:47:08,783] - Logger.py] - INFO: 获取好友：{'code': 0, 'count': 10, 'data': [{'_id': '1218245241153257472', 'mark': '9483', 'avatar': 'e5f23ee0ed02e4bdd09ac39b4edbe134.jpg', 'nickname': '测试下个人资料推送', 'first_short': 'C', 'online_status': '4', 'play_status': '0', 'play_app_id': '1', 'last_server_id': '1203731450063486976', 'is_voice': '0', 'voice_info': None, 'last_look': {'is_auth': 1, 'member_count': 63, 'server_icon': '0ba5566652ed4a64a223dee4abe80f42.png', 'server_name': '豌豆社区+++', '_id': '1203731450063486976'}}, {'_id': '1212353381570445312', 'mark': '7533', 'avatar': 'f7348256d9d38f76f8125a3fab2c818a.jpg', 'nickname': '雨霖铃', 'first_short': 'Y', 'online_status': '4', 'play_status': '0', 'play_app_id': '1', 'last_server_id': '1215973960450048000', 'is_voice': '0', 'voice_info': None}, {'_id': '1212124358370131968', 'mark': '8252', 'avatar': '6778156efb103dd7d1356c31ee3895ac.jpg', 'nickname': '詹姆斯', 'first_short': 'Z', 'online_status': '4', 'play_status': '0', 'play_app_id': '191', 'last_server_id': '1203731450063486976', 'is_voice': '0', 'voice_info': None, 'last_look': {'is_auth': 1, 'member_count': 63, 'server_icon': '0ba5566652ed4a64a223dee4abe80f42.png', 'server_name': '豌豆社区+++', '_id': '1203731450063486976'}}, {'_id': '1178279915934449664', 'mark': '9527', 'avatar': '3aed2ad9542a08dd0a7f1825b7929725.gif', 'nickname': 'Eyun', 'first_short': 'E', 'online_status': '1', 'play_status': '0', 'play_app_id': '2', 'last_server_id': '1214924315250655232', 'is_voice': '0', 'voice_info': None, 'last_look': {'is_auth': 0, 'member_count': 1, 'server_icon': '3aed2ad9542a08dd0a7f1825b7929725.gif', 'server_name': 'testServer', '_id': '1214924315250655232'}}, {'_id': '1237721915611676672', 'mark': '2927', 'avatar': 'b56b748229e2a50654679b1b1d0d6732.jpg', 'nickname': '芒果冰沙', 'first_short': 'C', 'online_status': '0', 'play_status': '0', 'play_app_id': None, 'last_server_id': '1289239819590828032', 'is_voice': 0, 'voice_info': None, 'playing': '', 'last_look': {'is_auth': 0, 'member_count': 1, 'server_icon': '41985aedc8a352a8abe0c4a6cabf9859.jpg', 'server_name': '咯吱咯吱', '_id': '1289239819590828032'}}, {'_id': '1222507029411659776', 'mark': '7612', 'avatar': 'c57231765589fc21595a18bde0f9a42c.jpg', 'nickname': '小心心二号', 'first_short': '#', 'online_status': '0', 'play_status': '0', 'play_app_id': '1', 'last_server_id': '1222646876294086656', 'is_voice': 0, 'voice_info': None, 'playing': '', 'last_look': {'is_auth': 0, 'member_count': 3, 'server_icon': '', 'server_name': '12222', '_id': '1222646876294086656'}}, {'_id': '1190659892201914368', 'mark': '9781', 'avatar': 'cdbe2a86664fa092f62175f790fcaf0c.jpg', 'nickname': '灵魂在逃亡', 'first_short': 'L', 'online_status': '0', 'play_status': '0', 'play_app_id': '1', 'last_server_id': '1198633381072470016', 'is_voice': 0, 'voice_info': None, 'playing': '', 'last_look': {'is_auth': 0, 'member_count': 13, 'server_icon': '3a683d592853a2408b70564d3b801b0d.jpg', 'server_name': '诡异一族', '_id': '1198633381072470016'}}, {'_id': '1187068067469852672', 'mark': '7919', 'avatar': 'fbad355af061d440f0d8c22cd4e051e8.png', 'nickname': '圣诞快乐', 'first_short': 'S', 'online_status': '0', 'play_status': '0', 'play_app_id': '5', 'last_server_id': '1260280793368887296', 'is_voice': 0, 'voice_info': '{"server_id":"1293578635646599168","channel_id":"1293578684497657856","channel_type":4}', 'playing': '', 'last_look': {'is_auth': 0, 'member_count': 2, 'server_icon': None, 'server_name': '哈巴狗', '_id': '1260280793368887296'}}, {'_id': '1186674854070321152', 'mark': '5784', 'avatar': 'dd2605ef16c9293f6de77525e74d4009.jpg', 'nickname': '吴峥表示我要', 'first_short': 'W', 'online_status': '0', 'play_status': '0', 'play_app_id': '2', 'last_server_id': '1238898591611748352', 'is_voice': 0, 'voice_info': None, 'playing': '', 'last_look': {'is_auth': 0, 'member_count': 3, 'server_icon': '', 'server_name': '三生三世', '_id': '1238898591611748352'}}, {'_id': '1181585899410948096', 'mark': '5786', 'avatar': 'a5334cd77b28cbd18d6b6adb6a4a2bdd.gif', 'nickname': '森林小兵', 'first_short': 'S', 'online_status': '0', 'play_status': '0', 'play_app_id': '1', 'last_server_id': '', 'is_voice': 0, 'voice_info': None, 'playing': ''}], 'pageSize': 12, 'page': 1}
+-------------------------------------------------结束-------------------------------------------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt5_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_002</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_2'>通过</button>
+    <div id='div_pt5_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_2'>通过</button>
+    <div id='div_pt5_2' class="collapse in" align="left">
+    <pre>
+    
+pt5_2: -------------------------------------------------开始-------------------------------------------------
+[2020-10-10 13:47:09,517] - Logger.py] - INFO: 创建群聊：{'code': 0, 'is_owner': 1, 'top': 0, 'is_mute': 0, '_id': '1293932839657537536', 'server_id': '1293932839657537536', 'vip_id': '1237807399767638016', 'channel_name': '吴峥表示我要,灵魂在逃亡,詹姆斯', 'channel_type': 5, 'icon': '', 'member_cnt': 4, 'create_datetime': '2020-10-10 13:47:09'}
+-------------------------------------------------结束-------------------------------------------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt5_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_003</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_3'>通过</button>
+    <div id='div_pt5_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_3'>通过</button>
+    <div id='div_pt5_3' class="collapse in" align="left">
+    <pre>
+    
+pt5_3: -------------------------------------------------开始-------------------------------------------------
+[2020-10-10 13:47:09,711] - Logger.py] - INFO: 修改群资料：{'code': 0, 'data': {'icon': '4e8ecc9a65c44d16aede57ea9389d831.jpeg', 'channel_name': 's'}}
+-------------------------------------------------结束-------------------------------------------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt5_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_004</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_4'>通过</button>
+    <div id='div_pt5_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_4'>通过</button>
+    <div id='div_pt5_4' class="collapse in" align="left">
+    <pre>
+    
+pt5_4: -------------------------------------------------开始-------------------------------------------------
+[2020-10-10 13:47:09,962] - Logger.py] - INFO: 踢出群聊：{'code': 0, 'message': 'success'}
+-------------------------------------------------结束-------------------------------------------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_007_Set_the_data.set</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c6',1)" class="detail" id='c6'>详细</a></td>
+</tr>
+
+<tr id='pt6_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_001</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt6_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt6_1'>通过</button>
+    <div id='div_pt6_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt6_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt6_1'>通过</button>
+    <div id='div_pt6_1' class="collapse in" align="left">
+    <pre>
+    
+pt6_1: 设置资料： {'code': 0, 'message': 'success'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_A_login_wefun.login</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c7',1)" class="detail" id='c7'>详细</a></td>
+</tr>
+
+<tr id='pt7_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_code_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse in" align="left">
+    <pre>
+    
+pt7_1: 获取验证码--&gt; {'code': 0, 'err': 0, 'msg': 'send success', 'refresh_time': 60, 'verify_code': '900846'}
+登录成功
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_remark.remarks</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c8',1)" class="detail" id='c8'>详细</a></td>
+</tr>
+
+<tr id='ft8_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_001</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft8_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft8_1'>错误</button>
+    <div id='div_ft8_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft8_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft8_1'>错误</button>
+    <div id='div_ft8_1' class="collapse in" align="left">
+    <pre>
+    
+ft8_1: Traceback (most recent call last):
+  File "D:\WeFun Smoke\case\test_remark.py", line 30, in test_001
+    re = requests.post(url=url,data=json.dumps(data),headers = self.header)
+NameError: name 'url' is not defined
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>18</td>
+    <td>16</td>
+    <td>0</td>
+    <td>2</td>
+    <td>通过率：88.89%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
