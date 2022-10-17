@@ -1,5 +1,5 @@
 1.下载安装git
-2.创建标识 gti config --global user.name 'user'
+2.创建标识 git config --global user.name 'user'
 	       git config --global user.email '125341@qq.com'
 3.新建文件夹，将之变为git仓库
 	     cd进入该文件夹,执行git init 
