@@ -3,7 +3,7 @@
 	       git config --global user.email '125341@qq.com'
 3.新建文件夹，将之变为git仓库
 	     cd进入该文件夹,执行git init 
-4.输入gti remote -v 检查下当前git 是否链接GitHub
+4.输入git remote -v 检查下当前git 是否链接GitHub
 5.输入git remote add origin 远程仓库地址,然后检查是否连接成功 git remote -v 
 6.克隆远程仓库地址: git clone https:************/test.git
 6.查看分支git branch
