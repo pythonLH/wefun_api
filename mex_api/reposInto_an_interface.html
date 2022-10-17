@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>进件接口报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">进件接口报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 华华</p>
+<p class='attribute'><strong>开始时间 : </strong> 2022-10-10 14:59:15</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:13.853003</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 3，通过 3，通过率= 100.00%</p>
+
+<p class='description'></p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 3 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 3 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_login.Login</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',3)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_UploadingAddressBook_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: [2022-10-10 14:59:19,702] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-10 14:59:20,122] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '0f5ac71812180ce2', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-10 14:59:20,122] - logger_.py] - DEBUG: ================================结束================================
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_UploadingAddressBook_2</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in" align="left">
+    <pre>
+    
+pt1_2: [2022-10-10 14:59:20,122] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-10 14:59:22,024] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': 'b7473dbea9dcddb0', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-10 14:59:22,024] - logger_.py] - DEBUG: ================================结束================================
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_UploadingAddressBook_3</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in" align="left">
+    <pre>
+    
+pt1_3: [2022-10-10 14:59:22,025] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-10 14:59:29,521] - logger_.py] - DEBUG: 
+当前请求接口是: 提交借款申请：submitOneProduct,
+请求参数: {'appList': [{'appName': 'MoonVay', 'appVersion': '1.0.5', 'firstInstallTime': '2022-05-16 10:00:43', 'lastUpdateTime': '2022-05-16 10:00:43', 'packageName': 'app.moon.vay'}], 'attach': [{'attachName': '/upload/image/20221008', 'channel': 'app', 'md5': '706A86AC844CA1968434328513F629ED', 'newName': '2022100822134953321777.jpeg', 'newPathName': '/upload/image/20221008/2022100822134953321777.jpeg', 'originalAttachName': '/upload/image/20221008', 'originalName': '1665285227444595.jpeg', 'path': '/upload/image/20221008', 'purpose': 'sfzzm', 'size': 6758, 'uploadType': 'image'}, {'attachName': '/upload/image/20221008', 'channel': 'app', 'md5': 'D16BADADB0299041602A2AF74DBD7C52', 'newName': '2022100822143953462780.jpeg', 'newPathName': '/upload/image/20221008/2022100822143953462780.jpeg', 'originalAttachName': '/upload/image/20221008', 'originalName': '1665285277405318.jpeg', 'path': '/upload/image/20221008', 'purpose': 'sfzfm', 'size': 6749, 'uploadType': 'image'}, {'attachName': '/upload/image/20221008', 'channel': 'app', 'md5': '430A31FCA629E9565AD2A0CACD757733', 'newName': '2022100822163053585471.jpeg', 'newPathName': '/upload/image/20221008/2022100822163053585471.jpeg', 'originalAttachName': '/upload/image/20221008', 'originalName': '166528538853127.jpeg', 'path': '/upload/image/20221008', 'purpose': 'scsfz', 'size': 6657, 'uploadType': 'image'}], 'bank': {'idCard': 'G28868055658658855'}, 'base': {'birthday': '1991-01-01', 'childNum': '1', 'education': '1', 'email': 'fhhvhhh@163.com', 'familyName': 'fifth', 'givenName': 'gghh', 'idCardNum': 'G28868055658658855', 'instancyContacts': [{'contactName': '13wei(*´I`*)', 'contactPhone': '+529212975512', 'contactRelation': '0', 'contactRealName': '13wei(*´I`*)', 'lastTime': 0}, {'contactName': '13wei02(／_＼)大怨种', 'contactPhone': '525524064428', 'contactRelation': '2', 'contactRealName': '13wei02(／_＼)大怨种', 'lastTime': 0}], 'maritalStatus': '1', 'middleName': 'gush', 'placeAddress': 'fghh', 'placeCity': '003002', 'placeProvince': '003', 'placeTime': '', 'postalCode': '', 'rfc': '', 'sex': '1', 'sysPlaceAddress': '', 'uname': '', 'whatsApp': '2158083558'}, 'configPayout': 'true', 'customerSource': 'com.mx.hinance', 'firstExpectAmount': '750.00', 'firstExpectDay': '10', 'livenessId': '', 'merchantNo': '01', 'orgNo': 'MEX', 'payoutPaymentConfig': {'bankConfig': {'accountType': {'label': '银行', 'value': '0'}, 'bankCard': '128095486658866556', 'bankType': {'label': 'BANCOMEXT', 'value': '37006'}, 'name': 'fifth gghh gush'}, 'paymentChildKey': {'label': 'Bank', 'value': 'bank'}, 'paymentTypeKey': {'label': 'Bank transfer', 'value': 'bank'}}, 'productNo': 'MEX_01_1_20220927173142', 'promotionChannels': 'googlePlay', 'applyLoanAmount': '750.00', 'sign': {'adbEnabled': 1, 'androidId': '4535c1db08e9d00f', 'availableStorage': ' 16.0653GB', 'battery': '71', 'codeName': 'REL', 'cpu': 'armeabi-v7a', 'cpuInfo': '', 'cpuSpeed': '1144000KHz', 'currentWifi': '"HCLOUD-Risk"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'BC:76:5E:8A:0F:91', 'deviceModel': 'samsung#SM-G610F', 'deviceSerial': '3300fbcb8a7783cb', 'deviceSoftwareVersion': '01', 'deviceVersionType': 'user', 'displayMetrics': '1080,1920', 'fingerPrint': 'samsung/on7xeltedd/on7xelte:8.1.0/M1AJQ/G610FDXS1CTE1:user/release-keys', 'gaid': 'null', 'hardware': 'samsungexynos7870', 'imei': '353415087834233', 'imsi': '', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'Galaxy J7 Prime', 'model': 'samsung#SM-G610F', 'networkOperator': '46000', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '', 'os': '8.1.0', 'phoneAvailableRam': ' 0.8086GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        2882568 kB', 'phonecardCount': 0, 'product': 'on7xeltedd', 'radioVersion': 'G610FDDS1CTE2', 'resolutionHeight': '1920', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': '3c:cd:5d:11:42:30', 'runtimeAvailableMemory': ' 0.1715GB', 'runtimeMaxMemory': ' 0.1875GB', 'simState': 0, 'simulator': 1, 'timeZone': 'GMT+08:00', 'totalStorage': ' 25.3557GB', 'turnOnTime': '2022-09-28 10:10:51', 'uuid': '53454350484f4e455f3030303030303030303030303030303030313632313535', 'uuidOriginal': '[83, 69, 67, 80, 72, 79, 78, 69, 95, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 49, 54, 50, 49, 53, 53] '}, 'work': {'income': '3', 'payDay': '8', 'post': '0', 'salaryType': '3', 'secondPayDay': '', 'sourceIncome': '0', 'tel': '', 'workTime': '1'}},
+请求结果{'code': 0, 'msg': '成功', 'data': 'MEX2210101000301', 'traceId': 'a992df23acdfdeab', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-10 14:59:29,521] - logger_.py] - DEBUG: ================================结束================================
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>

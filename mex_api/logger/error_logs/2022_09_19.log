@@ -1,0 +1,126 @@
+[2022-09-19 11:38:59,218] - logger_.py] - ERROR: 当前请求体类型: <class 'list'>,应为: dict
+[2022-09-19 11:51:53,834] - logger_.py] - ERROR: 请求错误:Invalid URL 'None': No scheme supplied. Perhaps you meant http://None?
+[2022-09-19 11:52:06,275] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 11:52:51,939] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 11:55:03,503] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 11:55:24,143] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:07:48,639] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:08:17,388] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:08:36,850] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:11:48,706] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:12:37,934] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:16:16,439] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:02:38,462] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:02:48,117] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:03:22,908] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:04:35,349] - logger_.py] - ERROR: 请求错误:'str' object has no attribute 'items'
+[2022-09-19 14:04:48,444] - logger_.py] - ERROR: 请求错误:'str' object has no attribute 'items'
+[2022-09-19 14:05:21,904] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:05:35,364] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:06:00,717] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:06:43,911] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:08:25,920] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:08:40,622] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:09:49,131] - logger_.py] - ERROR: 请求错误:Header part (1) from {'commercialId': 1} must be of type str or bytes, not <class 'int'>
+[2022-09-19 14:20:10,701] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:50:39,523] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:01:02,311] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:01:02,738] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:01:02,738] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:01:40,435] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:01:40,854] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:01:40,854] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:04:05,829] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:04:06,245] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:04:06,245] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:07:10,904] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:09:22,856] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:45:06,247] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:45:06,247] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:45:06,257] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:45:06,257] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:45:06,257] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:45:06,257] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:55:36,509] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:55:36,509] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:55:36,919] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:55:36,919] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:55:36,919] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:55:36,919] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 16:00:50,371] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:00:28,726] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:00:28,726] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:00:28,726] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:00:28,726] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:02:00,356] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:02:00,356] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:02:00,874] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:02:00,874] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:02:00,874] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:02:00,874] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:02:00,874] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:03:02,253] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:03:02,253] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:06:08,568] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:06:08,568] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:06:08,568] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:06:08,568] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:08:20,307] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:08:20,307] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+

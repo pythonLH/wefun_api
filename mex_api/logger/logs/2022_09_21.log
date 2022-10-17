@@ -1,0 +1,102 @@
+[2022-09-21 11:14:18,318] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:14:18,319] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:14:18,323] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:14:18,324] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:14:18,331] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:14:19,088] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:14:19,143] - logger_.py] - DEBUG: 登录成功的token是:4de90d8a17958cdedeacfb61059b164e
+[2022-09-21 11:15:35,512] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:35,513] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:15:35,516] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:35,516] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:15:35,525] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:35,623] - logger_.py] - ERROR: 当前请求的错误: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-21 11:15:35,625] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:35,704] - logger_.py] - DEBUG: 登录成功的token是:b38f61a2817dc3ba1f15615889878e48
+[2022-09-21 11:15:53,430] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:53,431] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:15:53,433] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:53,434] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:15:53,443] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:53,478] - logger_.py] - ERROR: 当前请求的错误: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-21 11:15:53,480] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:15:53,514] - logger_.py] - DEBUG: 登录成功的token是:c36a48f9d9c326714c81b36b45ed92a7
+[2022-09-21 11:17:31,443] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:17:31,520] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:17:31,554] - logger_.py] - DEBUG: 登录成功的token是:2095675c9c7c08463d49c62da0965dd6
+[2022-09-21 11:17:31,555] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:17:31,555] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:17:31,558] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:17:31,559] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:20:39,685] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:20:39,766] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:20:39,878] - logger_.py] - DEBUG: 登录成功的token是:27710920bc31330401c494d1c5141010
+[2022-09-21 11:20:39,878] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:20:39,879] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:20:39,882] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:20:39,882] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:25:46,649] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:25:48,026] - logger_.py] - ERROR: 当前请求的错误: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-21 11:25:48,029] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:25:48,721] - logger_.py] - DEBUG: 登录成功的token是:38686d17f280c4147cc99aa257d12c3b
+[2022-09-21 11:25:48,723] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:25:48,723] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:25:48,724] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:25:48,725] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:39:07,547] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:39:07,554] - logger_.py] - ERROR: 当前请求的错误: Expecting value: line 1 column 1 (char 0)
+[2022-09-21 11:39:07,559] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:39:07,562] - logger_.py] - ERROR: 当前请求的错误: Expecting value: line 1 column 1 (char 0)
+[2022-09-21 11:39:07,565] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:39:07,565] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 11:39:07,574] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 11:39:07,575] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 16:30:39,943] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:31:09,181] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:31:26,498] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:31:35,340] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:31:36,107] - logger_.py] - DEBUG: 登录成功的token是:32e95c22c0794021354af3cd3f420946
+[2022-09-21 16:31:36,108] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:31:36,108] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 16:31:36,112] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:31:36,112] - logger_.py] - ERROR: 当前请求的错误: 'Request' object has no attribute 'resp'
+[2022-09-21 16:54:20,350] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:54:33,184] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:54:44,760] - logger_.py] - DEBUG: 登录成功的token是:ca60605c505f5a7704fb5f5c83fb9587
+[2022-09-21 16:54:44,761] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 16:55:00,784] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:06:33,421] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:06:40,585] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:06:42,810] - logger_.py] - DEBUG: 登录成功的token是:3ab6e2f4baa2817bd2d4de382e8e85a4
+[2022-09-21 17:06:42,814] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:07:00,089] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:07:51,722] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:07:51,920] - logger_.py] - ERROR: 当前请求的错误: '成功' != '手机号不能为空'
+- 成功
++ 手机号不能为空
+
+[2022-09-21 17:11:12,702] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:11:15,473] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:11:23,284] - logger_.py] - DEBUG: 登录成功的token是:7272433cf3fcb4267f27801f5a546b11
+[2022-09-21 17:11:23,287] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:11:28,275] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:11:44,199] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:11:44,427] - logger_.py] - ERROR: 当前请求的错误: '成功' != '手机号不能为空'
+- 成功
++ 手机号不能为空
+
+[2022-09-21 17:21:54,206] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:21:55,091] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:21:57,510] - logger_.py] - DEBUG: 登录成功的token是:203a61ccb820d66c068b0d0b0bcf77fa
+[2022-09-21 17:21:57,513] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:21:58,173] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-21 17:22:02,360] - logger_.py] - DEBUG: 开始: {}的接口请求!

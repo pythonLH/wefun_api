@@ -1,0 +1,201 @@
+[2022-10-08 09:39:20,204] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:39:21,875] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '1a64a7d1ce0581d2', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:39:21,876] - logger_.py] - DEBUG: ================================结束================================
+[2022-10-08 09:39:21,877] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:39:30,572] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 900.0, 'loanDay': 8, 'installmentNum': 1, 'fistInstallmentDays': 8, 'productNo': 'MEX_01_1_20220617173142'}], 'traceId': '7522d20ecdf45be4', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:39:30,573] - logger_.py] - DEBUG: ================================结束================================
+[2022-10-08 09:39:30,573] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:39:41,417] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id9f5d2d62756e72a6
+[2022-10-08 09:39:41,418] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id9f5d2d62756e72a6
+[2022-10-08 09:39:41,419] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-08 09:39:41,420] - logger_.py] - DEBUG: ================================结束================================
+[2022-10-08 09:44:49,221] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:44:49,530] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'c78041ed96a8c859', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:44:49,531] - logger_.py] - DEBUG: ================================结束================================
+[2022-10-08 09:44:49,532] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:44:51,036] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 900.0, 'loanDay': 8, 'installmentNum': 1, 'fistInstallmentDays': 8, 'productNo': 'MEX_01_1_20220617173142'}], 'traceId': '102726c1e68525ad', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:44:51,038] - logger_.py] - DEBUG: ================================结束================================
+[2022-10-08 09:44:51,039] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:44:53,199] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：acab5af9d594fdeb
+[2022-10-08 09:44:53,201] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：acab5af9d594fdeb
+[2022-10-08 09:44:53,202] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-08 09:44:53,203] - logger_.py] - DEBUG: ================================结束================================
+[2022-10-08 09:45:25,134] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:45:25,658] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '015728031fcadc04', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:45:25,658] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 09:45:25,659] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:45:26,409] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 900.0, 'loanDay': 8, 'installmentNum': 1, 'fistInstallmentDays': 8, 'productNo': 'MEX_01_1_20220617173142'}], 'traceId': '8e296c033f7b5417', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:45:26,409] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 09:45:26,410] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:45:27,740] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：e81064f14fdf5c2f
+[2022-10-08 09:45:27,741] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：e81064f14fdf5c2f
+[2022-10-08 09:45:27,742] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-08 09:45:27,743] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 09:50:46,848] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:50:47,177] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '7715d203ab903631', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:50:47,177] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 09:50:47,178] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:50:47,877] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 900.0, 'loanDay': 8, 'installmentNum': 1, 'fistInstallmentDays': 8, 'productNo': 'MEX_01_1_20220617173142'}], 'traceId': '68d705b6bebab8a5', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 09:50:47,879] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 09:50:47,880] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 09:50:48,846] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：2e5152e35d74d8d4
+[2022-10-08 09:50:48,848] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：2e5152e35d74d8d4
+[2022-10-08 09:50:48,849] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-08 09:50:48,850] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:03:50,448] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:03:50,808] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '10fcfb7cebb91a28', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:03:50,808] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:03:50,809] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:03:51,622] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '6daff20615e15e6a', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:03:51,622] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:03:51,623] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:03:53,781] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果BORROW_MONEY_ADJUST_PRODUCT_AMOUNT,错误id：b7951e600e234f3b
+[2022-10-08 18:03:53,781] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果BORROW_MONEY_ADJUST_PRODUCT_AMOUNT,错误id：b7951e600e234f3b
+[2022-10-08 18:03:53,782] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'BORROW_MONEY_ADJUST_PRODUCT_AMOUNT'
+- 成功
++ BORROW_MONEY_ADJUST_PRODUCT_AMOUNT
+
+[2022-10-08 18:03:53,783] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:11:26,705] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:11:27,474] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '5edda05ed4b7e7be', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:11:27,477] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:11:27,477] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:11:28,259] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '4ad9b38f07d3ec9a', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:11:28,260] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:11:28,261] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:11:29,580] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果BORROW_MONEY_ADJUST_PRODUCT_AMOUNT,错误id：641f8b07c09dbf17
+[2022-10-08 18:11:29,581] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果BORROW_MONEY_ADJUST_PRODUCT_AMOUNT,错误id：641f8b07c09dbf17
+[2022-10-08 18:11:29,584] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'BORROW_MONEY_ADJUST_PRODUCT_AMOUNT'
+- 成功
++ BORROW_MONEY_ADJUST_PRODUCT_AMOUNT
+
+[2022-10-08 18:11:29,585] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:16:32,519] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:16:33,106] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '9e6e947483b7e8af', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:16:33,106] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:16:33,107] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:16:33,954] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': 'cf44e1460e3cd258', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:16:33,954] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:16:33,955] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:16:35,912] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：be55776efd481b18
+[2022-10-08 18:16:35,912] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：be55776efd481b18
+[2022-10-08 18:16:35,913] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-08 18:16:35,914] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:38:10,366] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:38:10,870] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '3fa44e3a23f2a6d4', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:38:10,870] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:38:10,871] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:38:12,084] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '6c3d69760bf6f8bb', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:38:12,084] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:38:12,085] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:38:13,693] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：b75b626517cc338c
+[2022-10-08 18:38:13,695] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：b75b626517cc338c
+[2022-10-08 18:38:13,696] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-08 18:38:13,697] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:44:55,164] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:44:55,504] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'be35e2e36f371cff', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:44:55,505] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:44:55,506] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:44:56,678] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '68194b51aa205ba5', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-08 18:44:56,680] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-08 18:44:56,680] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-08 18:44:57,848] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果BORROW_MONEY_ADJUST_PRODUCT_AMOUNT,错误id：854b323717cbfbef
+[2022-10-08 18:44:57,849] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果BORROW_MONEY_ADJUST_PRODUCT_AMOUNT,错误id：854b323717cbfbef
+[2022-10-08 18:44:57,850] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'BORROW_MONEY_ADJUST_PRODUCT_AMOUNT'
+- 成功
++ BORROW_MONEY_ADJUST_PRODUCT_AMOUNT
+
+[2022-10-08 18:44:57,851] - logger_.py] - DEBUG: ================================结束================================
+

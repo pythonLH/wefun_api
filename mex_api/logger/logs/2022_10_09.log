@@ -1,0 +1,23 @@
+[2022-10-09 10:19:59,318] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-09 10:19:59,856] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'c0cc94e4d67afa64', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-09 10:19:59,865] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-09 10:19:59,865] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-09 10:20:03,789] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '093b9063fa8835e7', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-10-09 10:20:03,789] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-10-09 10:20:03,790] - logger_.py] - DEBUG: ================================开始================================
+[2022-10-09 10:20:08,220] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：0940f581292a2be0
+[2022-10-09 10:20:08,220] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果CHOICE_PRODUCT_AMOUNT_ADJUST,错误id：0940f581292a2be0
+[2022-10-09 10:20:08,221] - logger_.py] - ERROR: 当前请求的错误: '成功' != 'CHOICE_PRODUCT_AMOUNT_ADJUST'
+- 成功
++ CHOICE_PRODUCT_AMOUNT_ADJUST
+
+[2022-10-09 10:20:08,222] - logger_.py] - DEBUG: ================================结束================================
+

@@ -1,0 +1,132 @@
+[2022-09-19 11:38:59,218] - logger_.py] - ERROR: 当前请求体类型: <class 'list'>,应为: dict
+[2022-09-19 11:51:53,834] - logger_.py] - ERROR: 请求错误:Invalid URL 'None': No scheme supplied. Perhaps you meant http://None?
+[2022-09-19 11:52:06,275] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 11:52:51,939] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 11:55:03,503] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 11:55:24,143] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:07:48,639] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:08:17,388] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:08:36,850] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:11:48,706] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:12:37,934] - logger_.py] - ERROR: 请求错误:No connection adapters were found for '192.168.122.239:7037/hc/app/noAuth/logon/doRegister'
+[2022-09-19 12:16:16,439] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:02:38,462] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:02:48,117] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:03:22,908] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:04:35,349] - logger_.py] - ERROR: 请求错误:'str' object has no attribute 'items'
+[2022-09-19 14:04:48,444] - logger_.py] - ERROR: 请求错误:'str' object has no attribute 'items'
+[2022-09-19 14:05:21,904] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:05:35,364] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:06:00,717] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:06:43,911] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:08:25,920] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:08:40,622] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:09:49,131] - logger_.py] - ERROR: 请求错误:Header part (1) from {'commercialId': 1} must be of type str or bytes, not <class 'int'>
+[2022-09-19 14:20:10,701] - logger_.py] - ERROR: 当前请求的body: <class 'str'>,应为: dict
+[2022-09-19 14:50:39,523] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:01:02,311] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:01:02,738] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:01:40,435] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:01:40,854] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:04:05,829] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:04:06,245] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:07:10,904] - logger_.py] - ERROR: 当前请求的: '成功' != '手机号或验证码错误'
+- 成功
++ 手机号或验证码错误
+
+[2022-09-19 15:09:22,856] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 15:45:06,247] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:45:06,247] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:45:06,257] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:45:06,257] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'url'
+[2022-09-19 15:46:19,026] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:46:19,566] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:52:32,434] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:52:32,943] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:55:35,909] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:55:36,509] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:55:36,509] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:55:36,919] - logger_.py] - ERROR: 当前请求的: 'dict' object has no attribute 'has_key'
+[2022-09-19 15:56:58,407] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 15:56:58,837] - logger_.py] - DEBUG: 开始: 的接口请求!
+[2022-09-19 16:00:50,371] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 16:53:36,193] - logger_.py] - DEBUG: 开始: doRegister的接口请求!
+[2022-09-19 16:53:36,193] - logger_.py] - DEBUG: 开始: login的接口请求!
+[2022-09-19 16:53:36,971] - logger_.py] - INFO: 登录未成功,登录接口结果: {'code': 0, 'msg': '成功', 'data': None, 'traceId': '210522242bb240a9', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-09-19 16:53:36,972] - logger_.py] - DEBUG: 开始: doRegister的接口请求!
+[2022-09-19 16:53:36,972] - logger_.py] - DEBUG: 开始: login的接口请求!
+[2022-09-19 16:53:37,420] - logger_.py] - DEBUG: 登录成功的token是:008803c5f3b46b677d4666f8daaea62e
+[2022-09-19 16:54:56,824] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 16:54:57,347] - logger_.py] - INFO: 登录未成功,登录接口结果: {'code': 0, 'msg': '成功', 'data': None, 'traceId': '3dd8fd2c01d30840', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-09-19 16:54:57,347] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 16:54:57,802] - logger_.py] - DEBUG: 登录成功的token是:f2c39adb15b589c007e6a959fc875321
+[2022-09-19 18:00:27,815] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:00:28,301] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:00:28,725] - logger_.py] - DEBUG: 登录成功的token是:c6dfeb84ac33ea897feb2ebd8457160b
+[2022-09-19 18:00:28,726] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:00:28,729] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:01:59,877] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:02:00,356] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:02:00,359] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:02:00,873] - logger_.py] - DEBUG: 登录成功的token是:32ee0f1050787b3ca7579562ca6d1266
+[2022-09-19 18:02:00,874] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:02:00,875] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:03:01,790] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:03:02,253] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:03:02,256] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:03:02,717] - logger_.py] - DEBUG: 登录成功的token是:08c4e5bb02aa7786058639a2289a3812
+[2022-09-19 18:03:02,718] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:03:25,584] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:03:26,020] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:03:26,446] - logger_.py] - DEBUG: 登录成功的token是:bb4177fa7d57f78172c9745f7bf98441
+[2022-09-19 18:03:26,449] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:04:24,166] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:04:24,613] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:04:25,039] - logger_.py] - DEBUG: 登录成功的token是:f463c0d29ace473acd0a29cacde78483
+[2022-09-19 18:04:25,040] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:06:07,672] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:06:08,131] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:06:08,568] - logger_.py] - DEBUG: 登录成功的token是:de43008b8af3af0c9787d8e012da1dcf
+[2022-09-19 18:06:08,568] - logger_.py] - ERROR: 当前请求的: 'Login' object has no attribute 'headers'
+[2022-09-19 18:06:08,571] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:08:19,846] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:08:20,307] - logger_.py] - ERROR: 当前请求的: '成功' != '用户已注册，不允许重复注册'
+- 成功
++ 用户已注册，不允许重复注册
+
+[2022-09-19 18:08:20,310] - logger_.py] - DEBUG: 开始: {}的接口请求!
+[2022-09-19 18:08:20,763] - logger_.py] - DEBUG: 登录成功的token是:a829ec5e72c83bb0512be5024657e2a0
+[2022-09-19 18:08:20,764] - logger_.py] - DEBUG: 开始: {}的接口请求!
