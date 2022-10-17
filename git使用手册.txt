@@ -1,0 +1,21 @@
+1.下载安装git
+2.创建标识 gti config --global user.name 'user'
+	       git config --global user.email '125341@qq.com'
+3.新建文件夹，将之变为git仓库
+	     cd进入该文件夹,执行git init 
+4.输入gti remote -v 检查下当前git 是否链接GitHub
+5.输入git remote add origin 远程仓库地址,然后检查是否连接成功 git remote -v 
+6.克隆远程仓库地址: git clone https:************/test.git
+6.查看分支git branch
+7.切换分支git checkout 分支的名字  创建分支：git branch 分支的名字  创建分支并且切换到该分支：git checkout -b 分支名字
+8.更新本代代码，到最新的远程代码:git fetch -all
+9.让本地代码与 origin/master 完全一致:git reset --hard origin/master
+10.拉去远程最新的代码到本地:git pull origin master
+
+# 提交部分
+查看是否有文件修改:git status
+添加到暂存区：git add 路径或文件名
+提交文件修改:git commit -m "注释内容"
+push本地代码到远程:git pust -u origin 分支名(一般是master)
+ 
+
